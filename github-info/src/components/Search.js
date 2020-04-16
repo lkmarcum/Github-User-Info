@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Search() {
+function Search(props) {
+  const [input, setInput] = useState("");
+
+  const changeHandler = (event) => {
+    setInput(event.target.value);
+  };
+
+  const submitSearch = (e) => {
+    e.preventDefault();
+    props.searchUser(input);
+    setInput("");
+  };
+
   return (
-    <form>
+    <form onSubmit={submitSearch}>
       <input
         type="text"
-        id="username"
-        name="username"
         placeholder="Enter a GitHub username"
+        onChange={(event) => changeHandler(event)}
+        value={input}
       />
+      <button>Submit</button>
     </form>
   );
 }
