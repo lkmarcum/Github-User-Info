@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/profile.scss";
+import ProfileContent from "./ProfileContent";
 
 function Profile(props) {
   return (
@@ -15,14 +16,24 @@ function Profile(props) {
               <h4>{props.user.location}</h4>
             </div>
             <div className="text-right">
-              <p>Repos: {props.user.numRepos}</p>
-              <p>Followers: {props.user.numFollowers}</p>
-              <p>Following: {props.user.numFollowing}</p>
+              <div className="p-container">
+                <h2>{props.user.numRepos}</h2>
+                <p>Repos</p>
+              </div>
+              <div className="p-container">
+                <h2>{props.user.numFollowers}</h2>
+                <p>Followers</p>
+              </div>
+              <div className="p-container">
+                <h2>{props.user.numFollowing}</h2>
+                <p>Following</p>
+              </div>
             </div>
           </div>
           <img src={props.user.graphURL} />
         </div>
       </div>
+      <ProfileContent user={props.user} />
     </div>
   );
 }

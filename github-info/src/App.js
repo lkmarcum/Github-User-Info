@@ -61,7 +61,7 @@ function App() {
       <div className="main-container">
         <Header />
         <Search searchUser={searchUser} />
-        <Profile user={user} />
+        {user.username != "" ? <Profile user={user} /> : null}
       </div>
     </div>
   );
