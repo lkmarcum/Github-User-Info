@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/search.scss";
 
 function Search(props) {
   const [input, setInput] = useState("");

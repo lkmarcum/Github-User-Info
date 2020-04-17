@@ -1,0 +1,29 @@
+.repo-container {
+  width: 20%;
+  margin-top: 20px;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+  height: 200px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  h4 {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    height: 30%;
+    overflow: hidden;
+  }
+  a {
+    text-decoration: none;
+    // border: 1px solid gray;
+    font-size: 1.5rem;
+    background: blue;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 3px;
+  }
+}
