@@ -3,7 +3,7 @@ import cubes from "../cubes.png";
 import "../styles/sidebar.scss";
 
 function Sidebar() {
-  const [showAbout, setShowAbout] = useState(false);
+  const [showAbout, setShowAbout] = useState(true);
   const [showContact, setShowContact] = useState(false);
 
   return (

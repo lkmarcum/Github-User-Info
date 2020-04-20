@@ -6,8 +6,9 @@
     margin-top: 40px;
 
     img {
-      width: 375px;
-      height: auto;
+      // width: 375px;
+      width: 21%;
+      height: 21%;
       border-radius: 10px;
       margin-right: 40px;
     }
@@ -57,8 +58,10 @@
       }
 
       img {
-        height: 200px;
-        width: auto;
+        // height: 200px;
+        // width: auto;
+        width: 100%;
+        height: auto;
         margin-top: 40px;
         border: 1px solid gray;
         padding: 20px;
